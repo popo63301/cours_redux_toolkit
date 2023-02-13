@@ -89,3 +89,9 @@ const fetchUsers = createAsyncThunk(
   }
 );
 ```
+
+---
+
+Exemple = fetch user
+
+https://redux-toolkit.js.org/usage/usage-guide#defining-async-logic-in-slices
