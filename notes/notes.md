@@ -49,3 +49,26 @@ Exercice =
   - increment
   - decrement
   - reset to 0
+
+---
+
+immutabilité
+
+avant redux:
+
+- il fallait respecter des règles d'immutabilités
+
+* on ne peut pas modifier state comme ça,
+* il faut créer des copies à chaque fois
+
+liste:
+
+- ajouter élément: pas list.push() / [...list, nouvelElement ]
+
+objet:
+
+- ajouter élément: {...ancienObj, key: "value" }
+
+Maintenant, on peut directement des opérations directes, dans les reducers, parce que derrière, Redux toolkit utilise =
+
+- Immer
