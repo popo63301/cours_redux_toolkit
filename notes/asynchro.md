@@ -101,3 +101,13 @@ https://redux-toolkit.js.org/usage/usage-guide#defining-async-logic-in-slices
 Exercice =
 
 - Créer un compteur asynchrone qui va incrémenter à chaque clique au bout de 3 secondes, et disable le bouton avant la fin des 3 secondes
+
+```js
+const TIMER = 1000;
+const counter = (count) =>
+  new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve(count);
+    }, TIMER);
+  });
+```
