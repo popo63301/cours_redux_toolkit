@@ -95,3 +95,9 @@ const fetchUsers = createAsyncThunk(
 Exemple = fetch user
 
 https://redux-toolkit.js.org/usage/usage-guide#defining-async-logic-in-slices
+
+---
+
+Exercice =
+
+- Créer un compteur asynchrone qui va incrémenter à chaque clique au bout de 3 secondes
