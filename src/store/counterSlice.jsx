@@ -13,21 +13,32 @@ export const counterSlice = createSlice({
   initialState,
   // gestions des actions dans le/les reducer(s) du state
   reducers: {
-    incrementLoading(state, action) {
+    counterLoading(state, action) {
       state.loading = "pending";
     },
     incrementSuccess(state, action) {
       state.loading = "idle";
       state.value += 1;
     },
+    decrementSuccess(state, action) {
+      state.loading = "idle";
+      state.value -= 1;
+    },
   },
 });
 
-const { incrementLoading, incrementSuccess } = counterSlice.actions;
+const { counterLoading, incrementSuccess, decrementSuccess } =
+  counterSlice.actions;
 
 // fonction asynchro
 export const asyncIncrement = () => async (dispatch) => {
-  dispatch(incrementLoading());
+  dispatch(counterLoading());
   await new Promise((resolve) => setTimeout(resolve, 3000)); // attendre 3 secondes
   dispatch(incrementSuccess());
+};
+
+export const asyncDecrement = () => async (dispatch) => {
+  dispatch(counterLoading());
+  await new Promise((resolve) => setTimeout(resolve, 3000)); // attendre 3 secondes
+  dispatch(decrementSuccess());
 };
