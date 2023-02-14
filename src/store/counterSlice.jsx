@@ -9,7 +9,7 @@ const initialState = {
 
 export const counterSlice = createSlice({
   // clé permettant d'identifier le reducer spécifique
-  name: "counter",
+  name: "sofianelebg",
   initialState,
   // gestions des actions dans le/les reducer(s) du state
   reducers: {
@@ -27,7 +27,7 @@ export const counterSlice = createSlice({
   },
 });
 
-const { counterLoading, incrementSuccess, decrementSuccess } =
+export const { counterLoading, incrementSuccess, decrementSuccess } =
   counterSlice.actions;
 
 // fonction asynchro
