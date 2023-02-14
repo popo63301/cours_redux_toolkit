@@ -23,10 +23,11 @@ export const counterSlice = createSlice({
   },
 });
 
-export const { incrementLoading, incrementSuccess } = counterSlice.actions;
+const { incrementLoading, incrementSuccess } = counterSlice.actions;
 
+// fonction asynchro
 export const asyncIncrement = () => async (dispatch) => {
   dispatch(incrementLoading());
-  await new Promise((resolve) => setTimeout(resolve, 3000));
+  await new Promise((resolve) => setTimeout(resolve, 3000)); // attendre 3 secondes
   dispatch(incrementSuccess());
 };
