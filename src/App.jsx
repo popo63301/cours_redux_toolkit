@@ -5,9 +5,9 @@ import AsyncCounter from "./components/AsyncCounter";
 
 const App = () => (
   <div>
-    {/* <Input />
+    <Input />
     <Result />
-    <Users /> */}
+    {/* <Users /> */}
     <AsyncCounter />
   </div>
 );

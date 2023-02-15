@@ -9,7 +9,6 @@ const AsyncCounter = () => {
 
   const dispatch = useDispatch();
 
-  console.log("counterLoading", counterLoading());
   return (
     <div style={{ marginTop: 150 }}>
       <div>La valeur du counter est: {value}</div>
