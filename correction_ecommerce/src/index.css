@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+button {
+  background-color: #eab122;
+  border: none;
+  border-radius: 2px;
+  padding: 0.3rem 1rem;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
+input {
+  border: thin solid gray;
+  border-radius: 2px;
+  padding: 0.25rem;
+  margin: 0 0.5rem;
+}
+
+header {
+  background-color: #eab122;
+  overflow: auto;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header a {
+  color: black;
+  text-decoration: none;
+}
+
+.basket-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 2rem;
+}
+
+.products-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 3rem;
+}
+
+.tag {
+  background-color: silver;
+  color: gray;
+  padding: 0.1rem 0.6rem;
+  border-radius: 2px;
+  font-size: 0.8rem;
+  font-weight: normal;
+}
+
+/**
+ * Dark mode
+ */
+
+.dark-mode {
+  background-color: #444444;
+
+  min-height: 100vh;
+  color: rgb(172, 172, 172);
+}
+
+.dark-mode header {
+  background-color: #242424;
+}
+
+.dark-mode header a {
+  color: rgb(172, 172, 172);
+  text-decoration: none;
+}
+
+.dark-mode .tag {
+  background-color: #242424;
+  color: rgb(172, 172, 172);
+  padding: 0.1rem 0.6rem;
+  border-radius: 2px;
+  font-size: 0.8rem;
+  font-weight: normal;
+}
